@@ -1,0 +1,47 @@
+// @import 'base.normalize';
+// // @import 'settings.variables';
+// @import 'settings.responsive';
+// @import 'components.content';
+
+//import style.css
+@import 'style.css';
+
+// import font family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+// variables
+$red: #F1352B;
+$blue: #01c1d6;
+$yellow: #ffb617;
+$MyFontSize: 17px;
+$MyFont:'Poppins', sans-serif;
+
+@mixin fontSetUp {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight:300;
+}
+
+.btn {
+  will-change: tranform;
+  transition: transform 480ms;
+}
+
+.btn:hover {
+  transition: transform 125ms;
+  transform: translateY(-10px);
+  background: $yellow;
+}
+
+.btn {
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  background: $blue;
+  color: white;
+  @include fontSetUp;
+  line-height: 1;
+}
