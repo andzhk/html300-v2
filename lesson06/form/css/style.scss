@@ -1,9 +1,3 @@
-// Import partials here
-@import "base.normalize";
-@import "settings.variables";
-@import "settings.responsive";
-@import "components.content";
-
 // Bootstrap
 
 @import "../node_modules/bootstrap/scss/functions";
@@ -19,3 +13,10 @@
 @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/tooltip";
+
+// Import partials here
+@import "base.normalize";
+@import "settings.variables";
+@import "settings.responsive";
+@import "components.content";

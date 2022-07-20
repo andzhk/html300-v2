@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 06 - Bootstrap 4</title>
-    </head>
-    <body>
-        <main class="main">
-          
-        </main>
-    </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <header>
+    <div class="contaner-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/imagePage/">Images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/popuplar-shows">Popular Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faqs">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="container">
+        <h1 class="text-center display-1 font-weight-bold main-heading">
+          Unlimited movies, TV shows and more.
+        </h1>
+        <h3 class="text-center font-weight-normal">
+          Watch anywhere. Cancel anytime.
+        </h3>
+        <form class="form-inline text-center my-2 my-lg-0 pt-5 pb-5">
+          <input class="form-control email-input mr-sm-2 p-2" type="email" placeholder="Email Address..." aria-label="Search" />
+          <button class="submit-btn btn btn-success my-2 my-sm-0 p-2" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <hr class="mt-5 mb-5" />
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col1 col-lg-6 col-md-6 col-sm-12">
+            <div class="content1">
+              <h2 class="display-4 font-weight-bold">Enjoy on your TV.</h2>
+              <p>
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                Blu-ray players and more.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img class="w-100" src="/images/image2.webp" alt="stranger things" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-5 mb-5" />
+    <div class="container-fluid pt-5 pb-5">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <img class="w-100" src="/images/image1.jpg" alt="stranger things" />
+          </div>
+          <div class="col1 col-lg-6 col-md-6 col-sm-12">
+            <div class="content2">
+              <h2 class="display-4 font-weight-bold">
+                Download your shows to watch offline.
+              </h2>
+              <p>
+                Save your favourites easily and always have something to
+                watch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid pt-5 pb-5 bg-light">
+      <p class="text-center mb-0">A bootstrap Website by Anna Dzhurko</p>
+    </div>
+  </footer>
+</body>
+
 </html>
