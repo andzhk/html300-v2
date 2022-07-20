@@ -13,5 +13,43 @@ html {
 }
 
 h1 {
-    color: $red;  
+    color: $red;
+}
+
+.container {
+  &contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:2%;
+    color: $dark-gray;
+  }
+
+  &dog {
+    border-radius: 50%;
+  }
+
+  &career {
+    margin-top: -1rem;
+    font-size:$MyFontSize;
+  }
+}
+
+.intro {
+  &text {
+    margin-left:5%;
+    margin-top:1.2rem;
+    color: $dark-gray;
+    font-size:11px;
+  }
+  &linkedin {
+    display: flex;
+    flex-direction: row;
+  }
+  &link {
+    margin-left:2%;
+  }
+  &linkdn {
+      width:20px;
+  }
 }
