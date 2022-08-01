@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Assignment 06 - Bootstrap 4</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid pt-5 pb-5">
+        <div class="container">
+          <h2 class="text-center mb-5">
+            We need your details to send latest Updates
+          </h2>
+          <div class="form-div p-3 mb-5 bg-white rounded">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputName1">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputName"
+                  aria-describedby="nameHelp"
+                  placeholder="Enter name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <button class="btn btn-success" id="clickMe">Click Me</button>
+              <span
+                id="btnSpan"
+                data-toggle="tooltip"
+                data-placement="top"
+                class="d-inline-block"
+                tabindex="0"
+                title="Please Click the left Button to Submit"
+              >
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="btn btn-success"
+                  style="pointer-events: none"
+                  disabled
+                >
+                  Submit
+                </button>
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $("[data-toggle=tooltip]").tooltip();
+    $(document).ready(function () {
+      $("#clickMe").click(function (event) {
+        event.preventDefault();
+        $("#submitBtn").prop("disabled", false);
+        $("#submitBtn").css("pointer-events", "initial");
+        $("#btnSpan").tooltip("disable");
+      });
+    });
+  </script>
+</html>
